@@ -96,14 +96,15 @@ rule blastn:
     input:
         "../{sample}/assembled_contigs/final.contigs.fa"
     output:
-        "../{sample}/blast_result/blast_out.txt"
+        general = "../{sample}/blast_result/blast_general_out.txt"
+        corona = "../{sample}/blast_result/blast_betacoronavirus_out.txt"
     conda:
         "../envs/unmapped.yaml"
     threads:
         config["threads"]
     shell:
-        "blastn -query {input} -db ref_viruses_rep_genomes -out {output} -num_threads {threads} -word_size 11 -max_target_seqs 10 &&"
-        "blastn -query {input} -db Betacoronavirus -out {output} -num_threads {threads} -word_size 11 -max_target_seqs 10"
+        "blastn -query {input} -db ref_viruses_rep_genomes -out {output.general} -num_threads {threads} -word_size 11 -max_target_seqs 10 &&"
+        "blastn -query {input} -db Betacoronavirus -out {output.corona} -num_threads {threads} -word_size 11 -max_target_seqs 10"
 
 rule orfFinder:
     input:
