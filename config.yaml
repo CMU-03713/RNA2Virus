@@ -1,10 +1,10 @@
 gtf:
     # Change this to the path to your GTF genome annotation file.
-    /ocean/projects/mcb180074p/zihengc/RNA2Virus/genome/hg38_refseall_transcripts.gtf
+    /ocean/projects/mcb180074p/zihengc/RNA2virus/genome/hg38_refseall_transcripts.gtf
 
 genomeDir:
     # Change this to the path to the folder yuo want your genome index to be stored. This should be an EMPTY folder inside the RNA2Virus repository.
-    /ocean/projects/mcb180074p/zihengc/RNA2Virus/genome/hg38_refseq
+    /ocean/projects/mcb180074p/zihengc/RNA2virus/genome/hg38_refseq
 
 threads:
     # Change this to the number of cores you have available. We recommend 16 cores.
