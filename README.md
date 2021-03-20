@@ -1,4 +1,4 @@
-# Virus-Detection
+# RNA2virus
 Detect virus (known and novel) from human RNA-seq data. For more information, refer to our [User Manual](https://github.com/CMU-03713/RNA2virus/blob/main/User%20Manual.pdf). 
 
 ## Authors
