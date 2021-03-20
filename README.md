@@ -77,4 +77,4 @@ All of output file for single read `sample_r1.fastq` or paired end `sample_r1.fa
 8. Assembled contigs named `final.contigs.fa` in `/assembled_contigs` directory.
 9. BLAST report named `blast_out.txt` in `/blast_result` directory.
 10. Open Reading Frame report named `contigsWithOrf.fasta` in `/ORFfinder` directory.
-11. Secondary RNA strunctures named `secondary_structure.str` in `/RNAfold` directory.
+11. Secondary RNA structures named `secondary_structure.str` in `/RNAfold` directory.
